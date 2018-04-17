@@ -10,3 +10,6 @@ to_number(to_char("8")) as cur_price,
 to_char("9") 阶段涨跌幅,
 to_char("FXSCODE") as FXSCODE
  from fxs_stcode;
+
+
+dburl='oracle://XX:XX@192.168.1.XX:1521/XXX'

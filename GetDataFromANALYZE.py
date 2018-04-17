@@ -4,7 +4,8 @@ from lxml.html import parse
 from pandas.io.parsers import TextParser
 from lxml.html import clean
 cleaner = clean.Cleaner(style=True,scripts=True,page_structure=False,safe_attrs_only=False)
-engine = create_engine('oracle://lb:lb@192.168.1.30:1521/tsbi')
+from Config import *
+engine = create_engine(dburl)
 fxsCODE =['11000175582',
 '11000174501',
 '11000257460',

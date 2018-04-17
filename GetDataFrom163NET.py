@@ -1,7 +1,8 @@
 import requests
 import pandas as pd
 from sqlalchemy import create_engine
-engine = create_engine('oracle://lb:lb@192.168.1.30:1521/tsbi')
+from Config import *
+engine = create_engine(dburl)
 headers ={
 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
